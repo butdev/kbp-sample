@@ -1,0 +1,8 @@
+configMapGenerator:
+- name: example-redis-config
+  namespace: k8s-example
+  files:
+  - redis-config
+namespace: k8s-example
+resources:
+- redis-master.yaml
